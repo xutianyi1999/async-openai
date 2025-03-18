@@ -971,7 +971,7 @@ pub struct CreateChatCompletionStreamResponse {
     pub choices: Vec<ChatChoiceStream>,
 
     /// The Unix timestamp (in seconds) of when the chat completion was created. Each chunk has the same timestamp.
-    pub created: u32,
+    pub created: u64,
     /// The model to generate the completion.
     pub model: String,
     /// The service tier used for processing the request. This field is only included if the `service_tier` parameter is specified in the request.
